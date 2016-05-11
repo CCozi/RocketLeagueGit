@@ -18,9 +18,9 @@ public class TeleporterFree : MonoBehaviour
 	public GameObject action;
 	public float activateTime = 0.2F;
 	
-	void OnTriggerEnter(Collider other)
+	void OnTriggerEnter(Collider RollerBall)
 	{
-		StartCoroutine(OnTeleport(other));
+		StartCoroutine(OnTeleport(RollerBall));
 	}
 	
 	IEnumerator OnTeleport(Collider other)
